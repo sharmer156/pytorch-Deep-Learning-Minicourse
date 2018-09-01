@@ -1,6 +1,93 @@
 # PyTorch-Deep-Learning-Minicourse
 Minicourse in Deep Learning with PyTorch [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/Atcold/PyTorch-Deep-Learning-Minicourse/master)
+PyTorch-深学习型Minicourse
+使用PyTorch进行深度学习的话语 活页夹
 
+这些课程是在我在普渡大学和纽约大学教学的几年中开发的，现在被提议用于普林斯顿大学的高能物理计算和数据科学（CoDaS-HEP）暑期学校。已记录整个课程，并在此处提供播放列表。检查幻灯片以获得更好视觉质量的图纸。我还计划在更安静的环境中以更慢的速度录制它们，将它们添加到我的YouTube频道，并在此处提供。
+
+目录
+T：理论（幻灯片和动画）
+P：练习（Jupyter笔记本）
+
+T 学习范式：监督，无监督和强化学习
+P 开始使用这些工具：Jupyter笔记本，PyTorch张量和自动分化
+T+P 神经网络的前向和后向传播用于分类
+T+P 卷积神经网络通过利用数据特性来提高性能
+T+P 无监督学习：香草和变分自动编码器，生成对抗网
+T+P 循环网络原生支持顺序数据
+会议和相关材料
+周二下午的时间段1（1小时30分钟+ 45分钟= 2小时15分钟）
+主题：1,2,3。
+幻灯片：01 - ML和螺旋分类。
+笔记本电脑：01，02，03，04。
+视频：01，02。
+周三下午的时间段2（1小时30分钟+ 45分钟= 2小时15分钟）
+主题：4。
+幻灯片：02 - CNN。
+笔记本：05。
+视频：03，04。
+周四下午的额外部分（45分钟）
+主题：5。
+幻灯片：03 - 生成模型。
+笔记本电脑：06，07。
+视频：05。
+星期五早上的额外部分（1小时30分钟）
+主题：6。
+幻灯片：04 - RNN。
+笔记本电脑：08-1，08-2，8月3日，8月4日。
+视频：06。
+笔记本可视化
+在这些讲座中使用Jupyter笔记本进行交互式数据探索和可视化。
+
+我对GitHub和Jupyter Notebook都使用了黑暗风格。你最好这样做，否则他们会看起来很难看。要正确查看内容，请安装以下内容：
+
+Jupyter笔记本黑暗主题 ;
+GitHub黑暗主题并注释掉invert #fff to #181818代码块。
+媒体报道
+普林斯顿研究计算机文章 ;
+普林斯顿大学主页文章。
+保持联系
+欢迎在Twitter上关注我，订阅我的YouTube频道，获取最新的免费教育资料。
+
+入门
+为了能够跟进研讨会练习，您将需要一台配备Miniconda（Anaconda的最小版本）和几个Python软件包的笔记本电脑。以下说明将适用于Mac或Ubuntu Linux用户，Windows用户需要在Gitbash终端中安装和工作。
+
+下载并安装Miniconda
+请访问Anaconda网站。为您的操作系统下载并安装适用于Python 3.6 的最新 Miniconda版本。
+
+wget < http：//链接到miniconda > 
+sh < miniconda .sh >
+之后，键入：
+
+conda --help
+并阅读手册。
+
+通过练习签出git存储库
+一旦Miniconda准备就绪，请检查课程存储库并继续设置环境：
+
+git clone https://github.com/Atcold/PyTorch-Deep-Learning-Minicourse
+如果你没有git并且不想安装它，只需将存储库下载为zip，然后解压缩它：
+
+wget的https://github.com/Atcold/PyTorch-Deep-Learning-Minicourse/archive/master.zip
+ ＃对于Mac用户：
+＃卷曲-O https://github.com/Atcold/PyTorch-Deep-Learning-Minicourse /archive/master.zip 
+unzip master.zip
+创建孤立的Miniconda环境
+切换到课程文件夹，然后键入：
+
+＃ CD PyTorch-深学习型Minicourse
+conda env create -f environment.yml
+来源激活codas-ml
+在Jupyter中启用anaconda内核
+要在Jupyter中显示新创建的miniconda环境，请安装ipykernel：
+
+python -m ipykernel install --user --name codas-ml --display-name “ Codas ML ”
+启动jupyter笔记本
+如果您正在使用JupyterLab容器，请双击右上角的“文件”选项卡。找到第一个笔记本，双击打开。不要尝试jupyter从终端窗口启动。
+
+如果在笔记本电脑上工作，请照常从终端开始：
+
+jupyter笔记本
 These lessons, developed during the course of several years while I've been teaching at Purdue and NYU, are here proposed for the Computational and Data Science for High Energy Physics ([CoDaS-HEP](http://codas-hep.org/)) summer school at Princeton University.
 The whole course has been recorded and the playlist is made available [here](https://www.youtube.com/playlist?list=PLLHTzKZzVU9duBIJCVGRh3tiy39d7Iz1q).
 Check the slides for drawings of better visual quality.
